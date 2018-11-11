@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>East Coast</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color: yellow;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Come & Visit</b></h3>
+  </div>
+  <div class="w3-bar-block">
+
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="destinations.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Destination</a>
+    <a href="category.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Category</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a>
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>Come & Visit</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Welcome</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>East Coast Region</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="http://travelmalaysiaguide.com/images/kelantan-gate.jpg" style="width:100%" onclick="onClick(this)" alt="Kelantan">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-s/02/6a/12/8c/filename-mg-0206-jpg.jpg" style="width:100%" onclick="onClick(this)" alt="Pahang">
+    </div>
+
+    <div class="w3-half">
+      <img src="https://us.123rf.com/450wm/ake1150/ake11501611/ake1150161100020/66155296-night-view-of-crystal-mosque-in-kuala-terengganu-malaysia-crystal-mosque-is-beautiful-mosqoe-in-mala.jpg?ver=6" style="width:100%" onclick="onClick(this)" alt="Terengganu">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>East Coast Region</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Kelantan, Terengganu and Pahang</p>
+    <p>Have you ever imagine having holiday in a heavenly beautiful island bounded by crystal clear waters, in a mystical rainforest with exotic, rare tropical floras and lofty trees, in a revitalizing hill resorts or fascinating coastal villages with interesting cultural pursuits? Such destinations are not only found in dreams, but in the Peninsular’s East Coast Region.</p>
+    <p>The region offers a charming mixed of culture, nature and a serene atmosphere that is suitable for visitors at all age. There are 3 states in the East Coast region, Pahang, Kelantan and Terengganu with Pahang being the most developed state among the group, Kelantan and Terengganu beckons with more countryside landscapes and an old world charm. For those who are familiar with the West Coast of Peninsular will recognize a complete difference in the East Coast. Here, the clock seems to rotate much slower and the bustling city life makes way for a laid back lifestyle.</p>
+    <p>Within this region resides Taman Negara, a 130 million year old tropical rainforest. Much to the interest of beach lovers, the world famous islands of Pulau Tioman, Pulau Redang, Pulau Perhentian and Pulau Lang Tengah offer getaways and underwater adventures that could not be experienced elsewhere. A range of high end hill resorts in Cameron Highlands and Genting Highlands are also among the incredible attractions within the region.</p>
+    <p>Line up with unique attractions, the East Coast Region is a haven of serenity, ideal for a relaxing vacation. Come and be mesmerized by the enchantment offered by this incredible region of Peninsular.</p>
+    <p><b>States in east coast region</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://i2.wp.com/www.holidaygogogo.com/wp-content/uploads/2014/02/Kelantan-300x200.jpg" alt="Kelantan" style="width:100%">
+        <div class="w3-container">
+            <a href="https://www.holidaygogogo.com/kelantan/"> <h3>Kelantan</h3> </a>
+            <p class="w3-opacity">Darul Naim</p>
+            <p>Kelantan is a state located at the eastern part of the Peninsular of Malaysia and is popular for its Malay culture, religion and crafts. In this state, you will find plenty of rural fishing villages, beautiful beaches and stretch of paddy fields. With the wide array of attractions, tourist to Kelantan will get the chance to enjoy river cruise, river rafting, jungle trekking, birds watching as well as to discover the historical background of Malaysia.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://i2.wp.com/www.holidaygogogo.com/wp-content/uploads/2017/05/Kuala-Terengganu-300x200.jpg" alt="Terengganu" style="width:100%">
+        <div class="w3-container">
+          <a href="https://www.holidaygogogo.com/terengganu-tourist-attractions-activities-and-hotels-guide/"> <h3>Terengganu</h3> </a>
+          <p class="w3-opacity">Darul Iman</p>
+          <p>Terengganu (登嘉楼) is situated along the Peninsula’s east coast with Kelantan and Pahang being its nearest neighboring states. Whether it is to go diving and snorkeling or merely to relax on powdery white beaches, boatloads of tourists make their way over the water to visit the island. Some of the islands are perfect for nature loving backpackers, others are more commercialized and serviced, with excellent hotels and restaurants to cater for a luxurious beach holiday.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://i2.wp.com/www.holidaygogogo.com/wp-content/uploads/2013/05/Bukit-Tinggi-Pahang-2-300x200.jpg" alt="Pahang" style="width:100%">
+        <div class="w3-container">
+          <a href="https://www.holidaygogogo.com/pahang/"> <h3>Pahang</h3> </a>
+          <p class="w3-opacity">Darul Makmur</p>
+          <p>Pahang, Malaysia’s peninsular biggest state is popular for its wide arrays of natural extremes, mysterious forest, beautiful islands, gorgeous beaches and chilling highlands. Taman Negara (aka National Park) is recognized as the Malaysia’s oldest park covers the oldest tropical rainforest in the world. There will be no short of activities that allows you to spend your day here for treetop canopy walk, jungle trekking, cruising through the Tembeling River, wildlife discovery in the jungle or exploring the night safari.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

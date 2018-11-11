@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Mountains/Hills</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color: yellow;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Come & Visit</b></h3>
+  </div>
+  <div class="w3-bar-block">
+
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="destinations.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Destination</a>
+    <a href="category.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Category</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a>
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>Come & Visit</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Welcome</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Pictures</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="https://i1.wp.com/www.lokalocal.com/blog/wp-content/uploads/2018/01/3-Cameron-Highlands-Strawberry-Farm.jpg?resize=668%2C534&ssl=1" style="width:100%" onclick="onClick(this)" alt="Cameron Highland">
+      <img src="https://1.bp.blogspot.com/-hrwHdXdd2ao/VkBSQ3b89rI/AAAAAAAAKz0/fRJ4fza8zj8/s1600/IMG_8926.JPG" style="width:100%" onclick="onClick(this)" alt="Fraser's Hill">
+      <img src="https://cdn-images-1.medium.com/max/2000/1*gsh_20k486sd0Wh3VUo4EQ.jpeg" style="width:100%" onclick="onClick(this)" alt="Kinabalu Mountain">
+    </div>
+
+    <div class="w3-half">
+      <img src="https://lonelyplanetwp.imgix.net/2015/11/GettyImages-535619797_full_cs.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" style="width:100%" onclick="onClick(this)" alt="Cameron Highland">
+      <img src="http://www.malaysia.travel/~/media/Images/Tourism%20Malaysia/Assets/Places/States/pahang/fraser-hill/gallery-xlarge-600x400/fraser-hill-09.ashx?mw=600&mh=400&hash=30AD8A17403C1482782853AEE45282B02227D898" style="width:100%" onclick="onClick(this)" alt="Fraser's Hill">
+      <img src="http://image.vovworld.vn/w730/uploaded/vovworld/ngotju/2017_05_18/nui_elpc.jpg" style="width:100%" onclick="onClick(this)" alt="Kinabalu Mountain">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Mountains/Hills</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The best mountains/hills in the world.</p>
+    <p>'Gunung' is the Bahasa Malaysia word for mountain and 'bukit' is Bahasa for hill. It does not always follow that a bukit is smaller and easier than a gunung. There are some very demanding bukits such as Bukit Batu Buli while some small and relatively easy peaks such as Angsi and Datuk are known as gunungs.
+    </p>
+    <p><b>Some of mountain/hill in Malaysia</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2015/11/GettyImages-560055147_super_cs.jpg" alt="cameron" style="width:100%">
+        <div class="w3-container">
+            <a href="https://www.lonelyplanet.com/malaysia/peninsular-malaysia-west-coast/cameron-highlands"> <h3>Cameron Highland</h3> </a>
+          <p>The Cameron Highlands (Malay: Tanah Tinggi Cameron, Chinese: 金马崙高原, Tamil: கேமரன் மலை) is a district in Pahang, Malaysia occupying an area of 712.18 square kilometres (274.97 sq mi). To the north, its boundary touches that of Kelantan; to the west, it shares part of its border with Perak.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://citytrvl.com/wp-content/uploads/2015/10/fraser.jpg" alt="fraser" style="width:100%">
+        <div class="w3-container">
+          <a href="http://www.fraserhill.info/"> <h3>Fraser's Hill</h3> </a>
+          <p>Fraser’s Hill is a mountain village in Pahang, Peninsular Malaysia, known for its highland rainforest and extensive birdlife. Several nature paths, including Pine Tree Trail and Bishop Trail, cross jungle terrain sheltering migratory birds like the Siberian thrush. The area also harbors Malayan tigers and rare trig oak trees. Near the village is the Jeriau Waterfall. Paddle boats traverse calm Allan’s Water Lake.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://cdn-asset.hipwee.com/wp-content/uploads/2015/10/benn-640x422.jpg" alt="kinabalu" style="width:100%">
+        <div class="w3-container">
+          <a href="https://www.malaysia-traveller.com/gunung-kinabalu.html"> <h3>Kinabalu Mountain</h3> </a>
+          <p>Mount Kinabalu is a mountain in Sabah, Malaysia. It is protected as Kinabalu Park, a World Heritage Site. Kinabalu is the highest peak in Borneo's Crocker Range and is the highest mountain in the Malay Archipelago as well as the highest mountain in Malaysia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

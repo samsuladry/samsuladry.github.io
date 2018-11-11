@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Shopping</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color: yellow;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Come & Visit</b></h3>
+  </div>
+  <div class="w3-bar-block">
+
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="destinations.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Destination</a>
+    <a href="category.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Category</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a>
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>Come & Visit</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Welcome</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Pictures</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="http://farm5.static.flickr.com/4114/4925889333_11aa4ae95f_o.jpg" style="width:100%" onclick="onClick(this)" alt="Siti Khadijah Market">
+      <img src="https://vtv1.mediacdn.vn/Uploaded/lanchi/2013_04_22/nhung-cho-dem-thu-vi-o-malaysia.jpg" style="width:100%" onclick="onClick(this)" alt="Filipino market">
+      <img src="http://static.asiawebdirect.com/m/kl/portals/kuala-lumpur-ws/homepage/klshopping/suria-mall-klcc/pagePropertiesImage/suria-klcc.jpg" style="width:100%" onclick="onClick(this)" alt="Suria KLCC">
+    </div>
+
+    <div class="w3-half">
+      <img src="http://imagegallery.tourism.gov.my/fotoweb/cache/5004/Kelantan/PASAR%20SITI%20KHADIJAH%20%203.t58ae2be3.m1200.w.4sTBMWaterM21.jpg.xJvZkIn4a.jpg" style="width:100%" onclick="onClick(this)" alt="Siti Khadijah Market">
+      <img src="https://previews.123rf.com/images/rumandawi/rumandawi1708/rumandawi170800285/85082815-%E3%81%8A%E5%9C%9F%E7%94%A3%E3%81%AF%E3%80%81%E3%83%9C%E3%83%AB%E3%83%8D%E3%82%AA%E3%80%81%E3%82%B3%E3%82%BF%E3%82%AD%E3%83%8A%E3%83%90%E3%83%AB%E3%80%81%E3%83%9E%E3%83%AC%E3%83%BC%E3%82%B7%E3%82%A2-%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E3%81%8A%E5%9C%9F%E7%94%A3%E5%B8%82%E5%A0%B4%E3%81%A7%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E3%81%BE%E3%81%99%E3%80%82.jpg" style="width:100%" onclick="onClick(this)" alt="Filipino market">
+      <img src="http://www.klccconventioncentre.com/images/articles/img_suria.jpg" style="width:100%" onclick="onClick(this)" alt="Suria KLCC">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Shopping</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The best place to shop in the world.</p>
+    <p>Malaysia offers visitors a myriad of opportunities to shop, from the latest designer brands and electronic hardware to elegant Malay garments and meticulously hand-crafted wooden baskets. The best places to do modern shopping are in Kuala Lumpur, Penang and Langkawi while those after cultural handicrafts should visit Malacca and the East Coast of Peninsular Malaysia.
+    </p>
+    <p><b>Some of modern and classic place to shop in Malaysia</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="http://www.mpkbbri.gov.my/sites/default/files/styles/panopoly_image_original/public/19949529799_bd1e7cd4ab_b.jpg?itok=qC6IIehN" alt="siti" style="width:100%">
+        <div class="w3-container">
+            <a href="http://www.mpkbbri.gov.my/ms/pelawat/beli-belah/pasar-siti-khadijah"> <h3>Siti Khadijah Market</h3> </a>
+          <p>The name is derived from Khadija bint Khuwaylid, the wife of Prophet Muhammad who was a businesswoman on that time. Thus, this market also is dominated by women sellers. <br>
+           The market was originally established as Buluh Kubu Market (Malay: Pasar Besar Buluh Kubu) in 1985 and opened to the public by Sultan Ismail Petra. The foundation stone of the building was laid by Tengku Razaleigh Hamzah. The market was then renamed by Kelantan Menteri Besar Nik Abdul Aziz Nik Mat in 1997.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://images.thrillophilia.com/image/upload/s--B8Rhsd1I--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_975/v1/images/photos/000/110/310/original/1491983835_kota-kinabalu-017.jpg.jpg?1491983835" alt="phil" style="width:100%">
+        <div class="w3-container">
+          <a href="https://curiostraveller.com/2016/04/08/the-colors-of-filipino-market-kota-kinabalu/"> <h3>Filipino market</h3> </a>
+          <p>Located at Sabah, we walk through the whole stretch of shops from handicraft to vegetables/ fruits to dried seafood. You can find a variety of dried seafood from scallop to sea cumber. Tips: try to bargain with the seller for better price.
+Also, after walking through the dried seafood stores, you will have a strong pungent smell that stick onto your clothes. Try not to wear fancy clothes or else the smell will stick onto your clothes.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="http://static.asiawebdirect.com/m/kl/portals/kuala-lumpur-ws/homepage/hotels/suria-klcc/pagePropertiesImage/suria-klcc.jpg" alt="kinabalu" style="width:100%">
+        <div class="w3-container">
+          <a href="https://www.suriaklcc.com.my/"> <h3>Suria KLCC</h3> </a>
+        <p> Suria KLCC is a shopping mall in Kuala Lumpur City Centre, Kuala Lumpur, Malaysia. .Opened in May 1998, the shopping mall was conceived as part of the Petronas Twin Towers project, having been constructed alongside the towers. The back of the mall is designed to offer views of KLCC Park and Lake Symphony, and open pool in between the parkland and the mall. The mall's floor plan is L-shaped, featuring its two wings exiting to Jalan Ampang and Jalan P. Ramlee, and converging at the central atrium, where direct assess to the lobby of the towers, the Petronas Philharmonic Hall and Lake Symphony are available.
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

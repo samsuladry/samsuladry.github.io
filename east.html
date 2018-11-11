@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>East Coast</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color: yellow;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Come & Visit</b></h3>
+  </div>
+  <div class="w3-bar-block">
+
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="destinations.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Destination</a>
+    <a href="category.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Category</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a>
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>Come & Visit</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Welcome</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>East Region</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="http://www.harbourview.com.my/images/content/page12.jpg" style="width:100%" onclick="onClick(this)" alt="Sarawak">
+      <img src="https://www.colourbox.com/preview/10147899-ocean-view-of-a-sea-gypsy-village-house-on-mabul-island-in-celebes-sea-sabah-malaysia.jpg" style="width:100%" onclick="onClick(this)" alt="Sabah">
+    </div>
+
+    <div class="w3-half">
+      <img src="http://www.housesbythesea.co.uk/Houses%20for%20Sale%20in%20Malaysia/Houses%20for%20Sale%20in%20Labuan/Trial%20Template/rooms/Large%20Photos%20of%20Labuan/view2.jpg" style="width:100%" onclick="onClick(this)" alt="Labuan">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>East Region</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Sarawak, Labuan and Sabah</p>
+    <p>In the gigantic rainforests of Borneo, homes to a special region unlike any other. In East Malaysia, adventure and nature comes alive to mesmerize its visitors. A paradise made up of mystical ancients caves, animal kingdoms, soaring mountains and spectacular underwater world.</p>
+    <p>This region is famous for its huge span of rainforest, mist capped mountains and the century old UNESCO World Heritage Sites such as the Gunung Mulu National Park in Sarawak and Kinabalu Park in Sabah. In the untouched wilderness, countless plant varieties flourish together with a great range of animal species. The world famous dive sites of Pulau Sipadan and Pulau Mabul are both the region’s iconic attractions. East Malaysia is home to myriad of ethnic groups, practicing captivating rituals and age old customs. One of the best way to experience and get close with such culture is to book a homestay in longhouses.</p>
+    <p>Be mesmerized in exploring the beauty of East Malaysia and enjoy the adventures that unfold.</p>
+    <p><b>States in east region</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://i3.wp.com/www.holidaygogogo.com/wp-content/uploads/2017/03/Sarawak-Museum-300x200.jpg" alt="Sarawak" style="width:100%">
+        <div class="w3-container">
+            <a href="https://www.holidaygogogo.com/sarawak/"> <h3>Sarawak</h3> </a>
+            <p class="w3-opacity">Bumi Kenyalang</p>
+            <p>Sarawak, the biggest state in Malaysia with Sabah as its neighbor, is homes to numerous stretch of rainforests and flowing rivers of Borneo and is occupied by Malaysia’s most ethnically assorted populations.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://i3.wp.com/www.holidaygogogo.com/wp-content/uploads/2012/08/Layangan-Beach-300x200.jpg" alt="Labuan" style="width:100%">
+        <div class="w3-container">
+          <a href="https://www.holidaygogogo.com/labuan/"> <h3>Labuan</h3> </a>
+          <p class="w3-opacity">Wilayah Persekutuan Malaysia</p>
+          <p>Labuan is one of the Malaysia’s federal territories located off the coast of Sabah. A tiny presence of six islands in East Malaysia, Labuan is fast becoming an offshore financial giant. In the recent years, it has also developed into a tourist destination for visitors traveling through Sabah and the neighboring Brunei.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://i2.wp.com/www.holidaygogogo.com/wp-content/uploads/2014/03/Sabah-300x200.jpg" alt="Sabah" style="width:100%">
+        <div class="w3-container">
+          <a href="https://www.holidaygogogo.com/sabah/"> <h3>Sabah</h3> </a>
+          <p class="w3-opacity">Negeri Di Bawah Bayu</p>
+          <p>Sabah is a very beautiful state in Malaysia located on the northern portion of the Borneo Island. Sabah is the second biggest state from the 13 states of Malaysia situated nearby to Sarawak, Labuan, Brunei and the Kalimantan of Indonesia. The people of Sabah are known as Sabahans, you will be amazed with how you will be treated with their unique hospitality apart from the fantastic places to see and things that you can do here. The unique tradition and culture of Sabah is something that you should not miss if you are looking for a sweet memory in this great place. The average temperature in lowlands is around 30 degree C and about 21 degree C at the highlands. Examples of lowlands area are Kota Kinabalu, Sandakan, Tawau and Kudat. Whereby Ranau, Kundasang and Tambunan are located at the highlands area. Mount Kinabalu has its own climate and the temperature can be at minus level at the height of 3500 meters or above. Eco-tourism is the main contributor to the growth of Sabah’s economy. With millions of visitors visiting Sabah, it is expected that the number will continue to grow following aggressive promotion programs by the local tourism board. There are 6 national parks in Sabah in which the Kinabalu National Park was listed as a UNESCO World Heritage Site in the year 2000. Gunung Mulu National Park in Sarawak is the 2nd UNESCO World Heritage Site located within the Borneo Island.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
