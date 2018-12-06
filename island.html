@@ -17,22 +17,41 @@ body {font-size:16px;}
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color: yellow;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Come & Visit</b></h3>
+    <h3 class="w3-padding-64" style="color:black"><b>Come & Visit</b></h3>
   </div>
-  <div class="w3-bar-block">
+  <div class="w3-bar-block" style="color:black">
 
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
-    <a href="destinations.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Destination</a>
-    <a href="category.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Category</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a>
+    <div class="baru">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Destination</a>
+          <ul>
+            <li><a href="northern.html">Northern Region</a></li>
+            <li><a href="#">Southern Region</a></li>
+            <li><a href="#">East Cost Regiont</a></li>
+            <li><a href="#">East Region</a></li>
+            <li><a href="central.html">Central Region</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Category</a>
+          <ul>
+            <li><a href="island.html">Island</a></li>
+            <li><a href="#">Camping</a></li>
+            <li><a href="mountain.html">Mountain/Hills</a></li>
+            <li><a href="#">Shopping</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
 
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding" style="color:black">
   <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
-  <span>Come & Visit</span>
+  <span class="kepala">Come & Visit</span>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -43,9 +62,9 @@ body {font-size:16px;}
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Welcome</b></h1>
+    <h1 class="w3-jumbo" style="Color:yellow"><b>Welcome</b></h1>
     <h1 class="w3-xxxlarge w3-text-red"><b>Pictures</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <hr style="width:150px;border:5px solid yellow" class="w3-round">
   </div>
 
   <!-- Photo grid (modal) -->
@@ -75,7 +94,7 @@ body {font-size:16px;}
   <!-- Designers -->
   <div class="w3-container" id="designers" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Islands</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <hr style="width:150px;border:5px solid yellow" class="w3-round">
     <p>The best island in the world.</p>
     <p>Located in Southeast Asia, the country of Malaysia is known for its many exotic islands that feature stunning beaches, tropical rainforests and diverse cultures. A great number of these islands present popular diving and snorkeling destinations because of their crystal clear waters and colorful coral reefs. However, the islands of Malaysia are not just about beaches and diving. There is much more to experience here such as colonial villages, beautiful temples, vibrant resorts and adventurous activities.
     </p>
@@ -87,7 +106,7 @@ body {font-size:16px;}
     <div class="w3-col m4 w3-margin-bottom">
       <div class="w3-light-grey">
         <img src="https://i1.wp.com/www.tinywanderer.com/wp-content/uploads/2018/05/IMG_20180306_110617.jpg?resize=1080%2C720" alt="Kapas" style="width:100%">
-        <div class="w3-container">
+        <div class="cont">
             <a href="https://says.com/my/seismik/sebab-kenapa-pulau-kapas-adalah-destinasi-terbaik-untuk-weekend-trip"> <h3>Kapas Island</h3> </a>
           <p>Kapas Island (Malay: Pulau Kapas) is an island located about 6 kilometers east of Marang, Malaysia, with a smaller island, Pulau Gemia, located north of it. It measures roughly 1.5 by 2.5 km. Its name, Pulau Kapas (Malay for cotton island), refers to the island's white beaches. The island has tropical jungle, clear seawater, white sand beaches and coral reefs in the surrounding waters. It is promoted as a "diving and snorkeling paradise". The island is reached by ferry from Marang. Kapas is the location where most of the research on the enigmatic Amphidromus snails is carried out (unlike all other snails, Amphidromus are amphidromine: they usually exist of clockwise and anticlockwise individuals).</p>
         </div>
@@ -96,7 +115,7 @@ body {font-size:16px;}
     <div class="w3-col m4 w3-margin-bottom">
       <div class="w3-light-grey">
         <img src="https://perhentian.com.my/v1/wp-content/uploads/2015/09/about-perhentian-thumb.jpg" alt="Perhentian" style="width:100%">
-        <div class="w3-container">
+        <div class="cont">
           <a href="http://www.malaysia.travel/en/my/places/states-of-malaysia/terengganu/pulau-perhentian"> <h3>Perhentian Island</h3> </a>
           <p>The two main islands are Perhentian Besar ("Greater Perhentian") and Perhentian Kecil ("Lesser Perhentian"). The small, uninhabited islands of Susu Dara (Virgin Milk), Serengeh and Rawa lie off Kecil.
 
@@ -107,7 +126,7 @@ Like Besut, people here generally speak Kelantanese Malay, however English is wi
     <div class="w3-col m4 w3-margin-bottom">
       <div class="w3-light-grey">
         <img src="http://www.tioman.org/img/activities.jpg" alt="Tioman" style="width:100%">
-        <div class="w3-container">
+        <div class="cont">
           <a href="https://www.lonelyplanet.com/malaysia/peninsular-malaysia-east-coast/pulau-tioman"> <h3>Tioman Island</h3> </a>
           <p>Tioman Island (Malay: Pulau Tioman) is a mukim and an island in Rompin District, Pahang, Malaysia. It is located 32 kilometres (20 miles) off the east coast of the state, and is some 21 kilometres (13 miles) long and 12 kilometres (7.5 miles) wide. It has seven villages, the largest and most populous being Kampung Tekek on the central western coast. The densely forested island is sparsely inhabited, and is surrounded by numerous coral reefs, making it a popular scuba diving, snorkelling, and surfing spot. There are many resorts and chalets for tourists around the island, which has duty-free status</p>
         </div>
@@ -120,7 +139,19 @@ Like Besut, people here generally speak Kelantanese Malay, however English is wi
 </div>
 
 <!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+<div class="footer">
+  <div class="containerBaru">
+    <div class="ayat">
+      <p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
+    </div>
+
+  </div>
+</div>
+<!-- </div>
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+    <p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
+</div> -->
+
 
 <script>
 // Script to open and close sidebar
@@ -141,6 +172,8 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+
+
 </script>
 
 </body>

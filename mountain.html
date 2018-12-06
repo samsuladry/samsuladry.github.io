@@ -3,7 +3,7 @@
 <title>Mountains/Hills</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="stylesheet3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
@@ -17,22 +17,41 @@ body {font-size:16px;}
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color: yellow;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Come & Visit</b></h3>
+    <h3 class="w3-padding-64" style="color:black"><b>Come & Visit</b></h3>
   </div>
-  <div class="w3-bar-block">
+  <div class="w3-bar-block" style="color:black">
 
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
-    <a href="destinations.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Destination</a>
-    <a href="category.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Category</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a>
+    <div class="baru">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Destination</a>
+          <ul>
+            <li><a href="northern.html">Northern Region</a></li>
+            <li><a href="#">Southern Region</a></li>
+            <li><a href="#">East Cost Regiont</a></li>
+            <li><a href="#">East Region</a></li>
+            <li><a href="central.html">Central Region</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Category</a>
+          <ul>
+            <li><a href="island.html">Island</a></li>
+            <li><a href="#">Camping</a></li>
+            <li><a href="mountain.html">Mountain/Hills</a></li>
+            <li><a href="#">Shopping</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
 
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding" style="color:black">
   <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
-  <span>Come & Visit</span>
+  <span class="kepala">Come & Visit</span>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -45,7 +64,7 @@ body {font-size:16px;}
   <div class="w3-container" style="margin-top:80px" id="showcase">
     <h1 class="w3-jumbo"><b>Welcome</b></h1>
     <h1 class="w3-xxxlarge w3-text-red"><b>Pictures</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <hr style="width:150px;border:5px solid yellow" class="w3-round">
   </div>
 
   <!-- Photo grid (modal) -->
@@ -75,7 +94,7 @@ body {font-size:16px;}
   <!-- Designers -->
   <div class="w3-container" id="designers" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Mountains/Hills</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <hr style="width:150px;border:5px solid yellow" class="w3-round">
     <p>The best mountains/hills in the world.</p>
     <p>'Gunung' is the Bahasa Malaysia word for mountain and 'bukit' is Bahasa for hill. It does not always follow that a bukit is smaller and easier than a gunung. There are some very demanding bukits such as Bukit Batu Buli while some small and relatively easy peaks such as Angsi and Datuk are known as gunungs.
     </p>
@@ -87,7 +106,7 @@ body {font-size:16px;}
     <div class="w3-col m4 w3-margin-bottom">
       <div class="w3-light-grey">
         <img src="https://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2015/11/GettyImages-560055147_super_cs.jpg" alt="cameron" style="width:100%">
-        <div class="w3-container">
+        <div class="cont">
             <a href="https://www.lonelyplanet.com/malaysia/peninsular-malaysia-west-coast/cameron-highlands"> <h3>Cameron Highland</h3> </a>
           <p>The Cameron Highlands (Malay: Tanah Tinggi Cameron, Chinese: 金马崙高原, Tamil: கேமரன் மலை) is a district in Pahang, Malaysia occupying an area of 712.18 square kilometres (274.97 sq mi). To the north, its boundary touches that of Kelantan; to the west, it shares part of its border with Perak.</p>
         </div>
@@ -96,7 +115,7 @@ body {font-size:16px;}
     <div class="w3-col m4 w3-margin-bottom">
       <div class="w3-light-grey">
         <img src="https://citytrvl.com/wp-content/uploads/2015/10/fraser.jpg" alt="fraser" style="width:100%">
-        <div class="w3-container">
+        <div class="cont">
           <a href="http://www.fraserhill.info/"> <h3>Fraser's Hill</h3> </a>
           <p>Fraser’s Hill is a mountain village in Pahang, Peninsular Malaysia, known for its highland rainforest and extensive birdlife. Several nature paths, including Pine Tree Trail and Bishop Trail, cross jungle terrain sheltering migratory birds like the Siberian thrush. The area also harbors Malayan tigers and rare trig oak trees. Near the village is the Jeriau Waterfall. Paddle boats traverse calm Allan’s Water Lake.</p>
         </div>
@@ -105,7 +124,7 @@ body {font-size:16px;}
     <div class="w3-col m4 w3-margin-bottom">
       <div class="w3-light-grey">
         <img src="https://cdn-asset.hipwee.com/wp-content/uploads/2015/10/benn-640x422.jpg" alt="kinabalu" style="width:100%">
-        <div class="w3-container">
+        <div class="cont">
           <a href="https://www.malaysia-traveller.com/gunung-kinabalu.html"> <h3>Kinabalu Mountain</h3> </a>
           <p>Mount Kinabalu is a mountain in Sabah, Malaysia. It is protected as Kinabalu Park, a World Heritage Site. Kinabalu is the highest peak in Borneo's Crocker Range and is the highest mountain in the Malay Archipelago as well as the highest mountain in Malaysia.</p>
         </div>
@@ -118,7 +137,14 @@ body {font-size:16px;}
 </div>
 
 <!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+<div class="footer">
+  <div class="containerBaru">
+    <div class="ayat">
+      <p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
+    </div>
+
+  </div>
+</div>
 
 <script>
 // Script to open and close sidebar

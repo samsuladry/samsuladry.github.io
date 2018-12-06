@@ -3,7 +3,7 @@
 <title>Central</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="stylesheet3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
@@ -17,22 +17,41 @@ body {font-size:16px;}
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color: yellow;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Come & Visit</b></h3>
+    <h3 class="w3-padding-64" style="color:black"><b>Come & Visit</b></h3>
   </div>
-  <div class="w3-bar-block">
+  <div class="w3-bar-block" style="color:black">
 
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
-    <a href="destinations.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Destination</a>
-    <a href="category.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Category</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a>
+    <div class="baru">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Destination</a>
+          <ul>
+            <li><a href="northern.html">Northern Region</a></li>
+            <li><a href="#">Southern Region</a></li>
+            <li><a href="#">East Cost Regiont</a></li>
+            <li><a href="#">East Region</a></li>
+            <li><a href="central.html">Central Region</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Category</a>
+          <ul>
+            <li><a href="island.html">Island</a></li>
+            <li><a href="#">Camping</a></li>
+            <li><a href="mountain.html">Mountain/Hills</a></li>
+            <li><a href="#">Shopping</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
 
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding" style="color:black">
   <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
-  <span>Come & Visit</span>
+  <span class="kepala">Come & Visit</span>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -43,9 +62,9 @@ body {font-size:16px;}
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Welcome</b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>Central Region</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h1 class="w3-jumbo" style="Color:yellow"><b>Welcome</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Pictures</b></h1>
+    <hr style="width:150px;border:5px solid yellow" class="w3-round">
   </div>
 
   <!-- Photo grid (modal) -->
@@ -72,7 +91,7 @@ body {font-size:16px;}
   <!-- Designers -->
   <div class="w3-container" id="designers" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Central Region</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <hr style="width:150px;border:5px solid yellow" class="w3-round">
     <p>Selangor, Kuala lumpur and Putrajaya.</p>
     <p>The Central Region is made up of lively towns and cities, soaring buildings and exciting places of interest. The Central region homes the country’s federal territories of Putrajaya and Kuala Lumpur as well as the bustling neighboring state of Selangor. Kuala Lumpur is the capital city of Malaysia and Putrajaya is the administrative capital of the country.</p>
     <p>The Central region boasts gleaming architectures, heritage attractions and world class events. The towering Petronas Towers and KL Tower are one of the most notable landmarks of Malaysia, and one of the tallest buildings in the world. Further South, Putrajaya is known as the ‘Intelligent Garden City’ for its pleasant mixture of infrastructure and nature. In Selangor, the state of art Sepang International Circuit sets the ground for the yearly Petronas Malaysian Formula 1 Grand Prix, attracting million of motorsports enthusiasts from around the world to visit Malaysia for this world class event.</p>
@@ -86,7 +105,7 @@ body {font-size:16px;}
     <div class="w3-col m4 w3-margin-bottom">
       <div class="w3-light-grey">
         <img src="https://i3.wp.com/www.holidaygogogo.com/wp-content/uploads/2013/12/Batu-Caves-300x200.jpg" alt="Selangor" style="width:100%">
-        <div class="w3-container">
+        <div class="cont">
             <a href="https://www.holidaygogogo.com/selangor/"> <h3>Selangor</h3> </a>
             <p class="w3-opacity">Darul Ehsan</p>
             <p>With plenty of shopping malls, including Setia City Mall, The Mines Wonderland, 1 Utama, The Curve, Sunway Pyramid and Tropicana City Mall, Selangor homes to a number of great shopping malls. Visit during the Malaysia Mega Sale Carnival so that you save the most from your pocket! The shopping malls in Selangor are not just for shopping; you can also go ice staking at Sunway Pyramid, wall climbing at 1 Utama, enjoy the latest movie and test your bowling skill.</p>
@@ -96,7 +115,7 @@ body {font-size:16px;}
     <div class="w3-col m4 w3-margin-bottom">
       <div class="w3-light-grey">
         <img src="https://i3.wp.com/www.holidaygogogo.com/wp-content/uploads/2013/12/kuala_lumpur11-300x200.jpg" alt="KualaLumpur" style="width:100%">
-        <div class="w3-container">
+        <div class="cont">
           <a href="https://www.holidaygogogo.com/kuala-lumpur/"> <h3>Kuala Lumpur</h3> </a>
           <p class="w3-opacity">Wilayah Persekutuan Malaysia</p>
           <p>Kuala Lumpur, or widely known as KL, is the main tourist spot of Malaysia, and even Asia. Kuala Lumpur is an amazing city that attracts tourists from all over the world. To begin your tour in this wonderland, Petronas Twin Towers, which has got the credit of being one of the tallest twin buildings in the world, is the right option for any tourist. Indeed, the nearby tourist attractions, such as Aquaria KLCC, Kuala Lumpur Tower and Petrosains Discovery Centre, will never keep your tour itinerary boring.</p>
@@ -106,7 +125,7 @@ body {font-size:16px;}
     <div class="w3-col m4 w3-margin-bottom">
       <div class="w3-light-grey">
         <img src="https://i2.wp.com/www.holidaygogogo.com/wp-content/uploads/2013/12/Putrajaya-300x200.jpg" alt="Putrajaya" style="width:100%">
-        <div class="w3-container">
+        <div class="cont">
           <a href="https://www.holidaygogogo.com/putrajaya-tourist-attractions-activities-and-hotels-guide/"> <h3>Putrajaya</h3> </a>
           <p class="w3-opacity">Wilayah Persekutuan Malaysia</p>
           <p>Located at about 25km away from the capital city Kuala Lumpur, Putrajaya is just over a decade old, and this new seat of Malaysia’s federal government has developed from a palm forest into an architecture wonderland.</p>
@@ -120,7 +139,14 @@ body {font-size:16px;}
 </div>
 
 <!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+<div class="footer">
+  <div class="containerBaru">
+    <div class="ayat">
+      <p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
+    </div>
+
+  </div>
+</div>
 
 <script>
 // Script to open and close sidebar
