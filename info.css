@@ -1,0 +1,94 @@
+html
+{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  height: 100%;
+  font-family: Source Sans pro;
+  background: yellow;
+}
+
+.left
+{
+  float: left;
+  width: 50%;
+}
+
+.wrapper
+{
+  margin: 50px auto;
+  font-weight: 400;
+  text-align: center;
+}
+
+h1
+{
+  font-weight: lighter;
+  font-size: 70px;
+  font-family: sans-serif;
+}
+
+button.accordion
+{
+  background: black;
+  color: white;
+  cursor: pointer;
+  border: 0px;
+  padding: 18px;
+  width: 70%;
+  text-align: left;
+  font-size: 18px;
+  transition: .4s;
+}
+button:focus
+{
+  outline: none;
+}
+
+button.accordion.active, button.accordion:hover
+{
+  background: grey;
+}
+
+div.panel
+{
+  padding: 0 18px;
+  color: black;
+  max-height: 0;
+  overflow: hidden;
+  width: 67.45%;
+  margin: 0 auto;
+  transition: max-height .2s ease-out;
+  font-size: 20px;
+}
+
+.logo
+{
+  padding-left: 70px;
+}
+
+.gallery
+{
+  margin: 10px 50px;
+}
+
+.gallery img
+{
+  width: 230px;
+  padding: 5px;
+  filter: grayscale(80%);
+  transition: 1s;
+}
+
+.gallery img:hover
+{
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
