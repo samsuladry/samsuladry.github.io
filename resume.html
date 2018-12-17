@@ -126,10 +126,17 @@
 
       <script type="text/javascript">
 
+      $(function()
+    {
+      $(".bio").hide().fadeIn(2000);
+      $(".right").hide().slideDown(2000);
+      $(".edu").hide().show(2000);
 
-      $(".edu").hover(function() {
-        $(".edu").slideUp(500).slideDown(500);
-      });
+    });
+
+      // $(".edu").hover(function() {
+      //   $(".edu").slideUp(500);
+      // });
 
 
 
