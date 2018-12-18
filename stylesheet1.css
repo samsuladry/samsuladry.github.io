@@ -266,7 +266,7 @@ header
 ul li
 {
   float: left;
-  width: 337px;
+  width: 25%;
   height: 40px;
   background-color: black;
   opacity: 0.8;
@@ -290,6 +290,8 @@ ul li a:hover
 ul li ul li
 {
   display: none;
+  width: 100%;
+  height: 40px;
 }
 
 ul li:hover ul li
